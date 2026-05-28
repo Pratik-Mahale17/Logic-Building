@@ -26,7 +26,7 @@ typedef int BOOL;
 //      Input:          integer
 //      Output:         BOOL
 //      Description:    Checks whether number is even or odd
-//      Date:           28/05/2026
+//      Date:           23/05/2026
 //      Author:         Pratik Subhash Mahale
 //
 /////////////////////////////////////////////////////////////////////////////////
