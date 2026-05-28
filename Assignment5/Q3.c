@@ -1,0 +1,57 @@
+/////////////////////////////////////////////////////////////////////////////////
+//
+//      Include required header files
+//
+/////////////////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+
+/////////////////////////////////////////////////////////////////////////////////
+//
+//      Function name:  Display
+//      Input:          integer
+//      Output:         void
+//      Description:    Prints numbers from negative input number
+//                      to positive input number
+//      Date:           24/05/2026
+//      Author:         Pratik Subhash Mahale
+//
+/////////////////////////////////////////////////////////////////////////////////
+void Display(
+                int iNo             // Input number
+            )
+{
+    int i = 0;                      // Counter variable
+
+    // Loop to print numbers from -iNo to iNo
+    for(i = -iNo; i <= iNo; i++)
+    {
+        printf("%d ", i);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+//
+//      Application to print numbers from negative
+//      to positive range
+//
+/////////////////////////////////////////////////////////////////////////////////
+int main()
+{
+    int iValue = 0;                 // Variable to store input number
+
+    printf("Enter number\n");
+
+    scanf("%d", &iValue);
+
+    // Function call
+    Display(iValue);
+
+    return 0;                       // Successful termination
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+//
+//      Input:      3
+//      Output:     -3 -2 -1 0 1 2 3
+//
+/////////////////////////////////////////////////////////////////////////////////
