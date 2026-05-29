@@ -1,0 +1,62 @@
+/////////////////////////////////////////////////////////////////////////////////
+//
+//      Include required header files
+//
+/////////////////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+
+/////////////////////////////////////////////////////////////////////////////////
+//
+//      Function name:  Number
+//      Input:          integer
+//      Output:         void
+//      Description:    Displays whether number is Small,
+//                      Medium or Large
+//      Date:           25/05/2026
+//      Author:         Pratik Subhash Mahale
+//
+/////////////////////////////////////////////////////////////////////////////////
+void Number(
+                int iNo             // Input number
+           )
+{
+    // Check number range
+    if(iNo < 50)
+    {
+        printf("Small");
+    }
+    else if((iNo >= 50) && (iNo < 100))
+    {
+        printf("Medium");
+    }
+    else
+    {
+        printf("Large");
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+//
+//      Application to check size category of number
+//
+/////////////////////////////////////////////////////////////////////////////////
+int main()
+{
+    int iValue = 0;                 // Variable to store input number
+
+    printf("Enter number\n");
+
+    scanf("%d", &iValue);
+
+    // Function call
+    Number(iValue);
+
+    return 0;                       // Successful termination
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+//
+//      Input:      75
+//      Output:     Medium
+//
+/////////////////////////////////////////////////////////////////////////////////
