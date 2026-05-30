@@ -52,7 +52,7 @@ int main()
     int iValue = 0;                 // Variable to store input number
     int iRet = 0;                   // Variable to store result
 
-    printf("Enter number\n");
+    printf("Enter number : \n");
 
     scanf("%d", &iValue);
 
