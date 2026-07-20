@@ -1,4 +1,3 @@
-
 ///////////////////////////////////////////////////////////////////
 //
 //      File Name : Q2.c
@@ -19,43 +18,43 @@
 //      Function Name : Pattern
 //      Input         : Integer, Integer
 //      Output        : Void
-//      Description   : Display uppercase alphabets
-//                      on odd rows and lowercase
-//                      alphabets on even rows
-//      Date          : 08/06/2026
-//      Author        : Pratik Subhash Mahale
+//      Description   : Display even numbers in odd
+//                      rows and odd numbers in even
+//                      rows.
 //
 ///////////////////////////////////////////////////////////////////
 
 void Pattern(int iRow, int iCol)
 {
-    int i = 0;          // Row counter
-    int j = 0;          // Column counter
-    char ch;            // Character variable
+    int i = 0;      // Row counter
+    int j = 0;      // Column counter
+    int iNo = 0;    // Number to print
 
     // Traverse each row
     for(i = 1; i <= iRow; i++)
     {
-        // Odd row -> Uppercase
+        // Odd rows
         if(i % 2 != 0)
         {
-            ch = 'A';
+            iNo = 2;        // First even number
 
+            // Print even numbers
             for(j = 1; j <= iCol; j++)
             {
-                printf("%c ", ch);
-                ch++;
+                printf("%d ", iNo);
+                iNo = iNo + 2;
             }
         }
-        // Even row -> Lowercase
+        // Even rows
         else
         {
-            ch = 'a';
+            iNo = 1;        // First odd number
 
+            // Print odd numbers
             for(j = 1; j <= iCol; j++)
             {
-                printf("%c ", ch);
-                ch++;
+                printf("%d ", iNo);
+                iNo = iNo + 2;
             }
         }
 
@@ -75,27 +74,27 @@ int main()
     int iValue1 = 0;      // Store number of rows
     int iValue2 = 0;      // Store number of columns
 
-    // Accept rows and columns from user
+    // Accept rows and columns
     printf("Enter number of rows and columns : ");
-    scanf("%d %d", &iValue1, &iValue2);
+    scanf("%d %d",&iValue1,&iValue2);
 
     // Function call
-    Pattern(iValue1, iValue2);
+    Pattern(iValue1,iValue2);
 
     return 0;
 }
 
 ///////////////////////////////////////////////////////////////////
 //
-//      Input  :
+//      Input :
 //      Rows = 4
-//      Columns = 4
+//      Columns = 5
 //
 //      Output :
-//      A B C D
-//      a b c d
-//      A B C D
-//      a b c d
+//      2 4 6 8 10
+//      1 3 5 7 9
+//      2 4 6 8 10
+//      1 3 5 7 9
 //
 ///////////////////////////////////////////////////////////////////
 
@@ -106,3 +105,4 @@ int main()
 //      Space Complexity : O(1)
 //
 ///////////////////////////////////////////////////////////////////
+
