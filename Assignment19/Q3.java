@@ -17,7 +17,6 @@
 //      Author     : Pratik Subhash Mahale
 //
 ///////////////////////////////////////////////////////////////////
-
 class OddNumberLogic
 {
     void printOddNumbers(int n)
